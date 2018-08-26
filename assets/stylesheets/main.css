@@ -1,0 +1,480 @@
+/*
+================
+    General
+================
+*/
+
+body {
+    font-family: "Raleway";
+    color: #fff;
+    font-weight: 300;
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+}
+
+/* trash? */
+
+/* :target::before {
+  content: "";
+  display: block;
+  height: 60px;
+  margin: -60px 0 0;
+} */
+
+/*
+================
+    Navbar
+================
+*/
+
+.navbar {
+    line-height: 2em;
+}
+
+.navbar-brand {
+    width: 50%;
+    padding-left: 80px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.navbar-collapse {
+    width: 50%;
+}
+
+.nav-item {
+    white-space: nowrap;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    margin: 0 8px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #f4a261;
+    transition: all 0.8s;
+    font-weight: 700;
+}
+
+/* make navbar white when page is loaded on smaller screen */
+@media (max-width: 991px) {
+    .navbar {
+        background-color: #fff;
+    }
+}
+
+/*
+================
+    Home
+================
+*/
+
+.home-picture {
+	background-image: url("../images/home.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.home-intro {
+    background-color: #e9c46a;
+    height: 100vh;
+    position: relative;
+} 
+
+.welcome-text {
+    position: absolute;
+    top: 50%;
+}
+
+.welcome-text h1 {
+    color: rgba(0,0,0,.5);
+    margin: 20px; 
+}
+
+.welcome-text h3 {
+    font-size: 0.85em;
+    text-transform: uppercase;
+    color: rgba(0,0,0,.3);
+    letter-spacing: 0.25em;
+    margin: -80px 0 20px 20px;
+}
+
+.welcome-text button {
+    background: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border: 3px solid rgba(0,0,0,.9);
+    border-radius: 40px/40px;
+    padding: 20px 30px 20px 30px;
+    cursor: pointer;
+    font-size: 0.85em;
+    margin: 40px 0 0 20px;
+    font-weight: 700;
+    outline: 0;
+    transition: all 0.4s;
+}
+
+.welcome-text button:hover {
+    border: 3px solid #f4a261;
+    background-color: #f4a261;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+/*
+================
+    About me
+================
+*/
+
+#about-me-id {
+    padding-top: 64px;
+    margin-top: -64px;
+}
+
+.about-me-info {
+    background-color: #fff;
+    min-height: 50vh;
+    padding: 35px;
+}
+
+.about-me-info h2 {
+    color: rgba(0,0,0,.5);
+    font-weight: 300;
+}
+
+.about-me-info p:first-of-type {
+    color: #e9c46a;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.about-me-info p:last-of-type {
+    color: rgba(0,0,0,0.5);
+    line-height: 2em;
+    text-align: left;
+    margin: 30px 0 0 0;
+}
+
+.about-me-picture {
+    background-image: url("../images/about-me.jpg");
+    background-size: cover;
+    min-height: 50vh;
+}
+
+.about-me-skills {
+    padding: 35px;
+    min-height: 50vh;
+    background-color: #f4a261;
+}
+
+.about-me-skills h2 {
+    font-weight: 300;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.skills-list li {
+    display:flex;
+    align-items:center;
+    margin-bottom: 25px;
+    font-size: 1.05em;
+    letter-spacing: 0.2em;
+}
+
+.fab {
+    color: rgba(0,0,0,.5);
+    font-size: 2em;
+    margin: 0 15px 0 0;
+}
+
+/*
+====================
+    Personality
+====================
+*/
+
+.personality {
+    min-height: 50vh;
+    text-align: center;
+    padding: 35px;
+}
+
+.personality-problem {
+    background-color: #2a9d8f;
+}
+
+.personality-time {
+    background-color: #e9c46a;
+}
+
+.personality-team {
+    background-color: #e76f51;
+}
+
+.personality-work {
+    background-color: #fff;
+    color: rgba(0,0,0,.5);
+}
+
+.personality i {
+    font-size: 2em;
+}
+
+.personality h3 {
+    margin: 20px 0 30px 0;
+    white-space: normal;
+}
+
+.personality p {
+    line-height: 2em;
+}
+
+/* 
+==================
+    Education
+==================
+*/
+
+#education-id {
+    padding-top: 64px;
+    margin-top: -64px;
+}
+
+.education {
+    min-height: 50vh;
+    padding: 35px;
+}
+
+.education-picture {
+    background-image: url("../images/education.jpeg");
+    background-size: cover;
+}
+
+.education-info {
+    background-color: #264653;
+}
+
+.education ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.education h2 {
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.education h3 {
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+.education p {
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #e9c46a;
+}
+
+/* 
+===================
+    Experiences
+===================
+*/
+
+#experiences-id {
+    padding-top: 64px;
+    margin-top: -64px;
+}
+
+.experiences {
+    min-height: 50vh;
+
+    padding: 35px;
+}
+
+.experiences-picture {
+    background-image: url("../images/experiences.jpg");
+    background-size: cover;
+} 
+
+.experiences-info {
+    background-color: #e76f51;
+}
+
+.experiences ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experiences h2 {
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.experiences h3 {
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+.experiences p {
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #e9c46a;
+}
+
+/*
+================
+    Contact
+================
+*/
+
+#contact-id {
+    padding-top: 64px;
+    margin-top: -64px;
+}
+
+.contact {
+    min-height: 70vh;
+    padding: 35px;
+} 
+
+.contact-form {
+    background-color: #2a9d8f;
+}
+
+.contact-form h2 {
+    font-weight: 300;
+}
+
+.contact-form p {
+    color: #e9c46a;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.input-field {
+    display: block;
+    margin-bottom: 30px;
+    width: 100%;
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid #e9c46a;
+    outline: none;
+    color: #fff;
+    font-weight: 300;
+    padding: 0 10px 10px 15px;
+}
+
+.input-field::placeholder {
+    color: #fff;
+    font-weight: 300;
+}
+
+.input-field:focus {
+    border-bottom-color: #fff;
+    transition: border-bottom-color 0.8s; 
+    caret-color: #e9c46a;
+}
+
+.contact-form button {
+    background: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border: 2px solid #e9c46a;
+    border-radius: 40px/40px;
+    padding: 20px 50px 20px 50px;
+    cursor: pointer;
+    font-size: 0.85em;
+    font-weight: 700;
+    outline: 0;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+.thank-you-message {
+    display: none;
+    margin-top: 15px;
+    color: #e9c46a;
+    font-weight: 300;
+}
+
+.contact-form button:hover {
+    color: #e9c46a;
+    background: #fff;
+    border: 2px solid #fff;
+    transition: all 0.4s;
+}
+
+.contact-picture {
+    background-image: url("../images/contact.jpg");
+    background-size: cover;
+}
+
+.contact-info {
+    background-color: #fff;
+    color: rgba(0,0,0,.5);
+    font-weight: 400;
+}
+
+.contact-info h2 {
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.social-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.social-list a {
+    color: #f4a261;
+    text-decoration: none;
+}
+
+.social-list li {
+    display:flex;
+    align-items:center;
+    margin-bottom: 45px;
+
+    font-size: 0.95em;
+    letter-spacing: 0.05em;
+}
+
+.social-list i {
+    color: rgba(0,0,0,.5);
+    font-size: 2em;
+    margin: 0 10px 0 0;
+}
+
+/*
+===============
+    Footer
+===============
+*/
+
+.footer {
+    background-color: #264653;
+    min-height: 10vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer h3 {
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+small {
+    margin-top: 10px;
+    color: #e9c46a;
+}
