@@ -55,7 +55,7 @@
         formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
         formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
 
-        var inputFields = document.querySelectorAll(".input-field");
+        var inputFields = Array.prototype.slice.call(document.querySelectorAll(".input-field"));
         console.log(inputFields);
         inputFields.forEach(function (inputField) {
             console.log(inputField.value);
