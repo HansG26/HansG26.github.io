@@ -148,7 +148,7 @@ h1, h2, h3 {
 }
 
 .about-me-info p:first-of-type {
-    color: #e9c46a;
+    color: #f4a261;
     font-weight: 300;
     margin-bottom: 0;
 }
@@ -159,6 +159,34 @@ h1, h2, h3 {
     text-align: left;
     margin: 30px 0 0 0;
 }
+
+.about-me-info button {
+    background: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border: 3px solid rgba(0,0,0,.5);
+    border-radius: 40px/40px;
+    padding: 20px 30px 20px 30px;
+    cursor: pointer;
+    font-size: 0.85em;
+    margin: 30px 0 15px 0;
+    font-weight: 700;
+    outline: 0;
+    color: #f4a261;
+    transition: all 0.4s;
+}
+
+.about-me-info button:hover {
+    border: 3px solid #f4a261;
+    background-color: #f4a261;
+    color: rgba(0,0,0,0.5);
+    transition: all 0.4s;
+}
+
+.about-me-info i {
+    padding-right: 10px;
+}
+
 
 .about-me-picture {
     background-image: url("../images/about-me.jpg");
